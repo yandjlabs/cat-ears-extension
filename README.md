@@ -1,6 +1,8 @@
 # Cat Ears Extension 🐱 
 A browser extension that adds cat ears to logos of major websites (OwO)
 
+A [Jacob](https://github.com/JacobF14) and [Yang](https://github.com/yang-yi-shen)™ production
+
 ## Todo list:
 
 - [ ] Learn SOP for making browser extension
