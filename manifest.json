@@ -1,0 +1,54 @@
+{
+    "name": "Cat Ears Logos",
+    "version": "0.1.0",
+    "description": "Adds cat ears to the logos of major websites.",
+    "permissions": [
+      "activeTab", 
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://*.youtube.com/*",
+          "https://*.instagram.com/*",
+          "https://*.facebook.com/*",
+          "https://*.tiktok.com/*",
+          "https://*.twitter.com/*"
+        ],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "assets/YouTube.svg",
+          "assets/Instagram.svg",
+          "assets/Facebook.svg",
+          "assets/TikTok.svg",
+          "assets/Twitter.svg",
+          "assets/power-off.svg",
+          "assets/power-on.svg"
+        ],
+        "matches": [
+          "https://*.youtube.com/*",
+          "https://*.instagram.com/*",
+          "https://*.facebook.com/*",
+          "https://*.tiktok.com/*",
+          "https://*.twitter.com/*"
+        ]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/logo.svg",
+        "24": "assets/logo.svg",
+        "32": "assets/logo.svg"
+      },
+      "default_title": "Cat Ears Extension",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}
