@@ -2,12 +2,18 @@ function isOnYouTube() {
   return window.location.hostname.includes("youtube.com");
 }
 
+function isOnInstagram() {
+  return window.location.hostname.includes("instagram.com");
+}
+
 function isOnFacebook() {
   return window.location.hostname.includes("facebook.com");
 }
 
+
+
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    //youtube
+    //youtube (please don't use shorts)
     if (request.action === "replaceLogo" && isOnYouTube()) {
       const logoElement = document.querySelector(".yt-spec-icon-shape div svg.external-icon");
       if (logoElement) {
@@ -15,6 +21,18 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         imgElement.setAttribute("id", "");
         imgElement.style.width = "90px";
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/YouTube.svg"));
+        logoElement.replaceWith(imgElement);
+      }
+    }
+
+    //instagram (for da gram)
+    if (request.action === "replaceLogo" && isOnInstagram()) {
+      const logoElement = document.querySelector("div._aagx svg._ab6-");
+      if (logoElement) {
+        const imgElement = document.createElement("img");
+        imgElement.setAttribute("id", "");
+        imgElement.style.width = "90px";
+        imgElement.setAttribute("src", chrome.runtime.getURL("assets/Instagram.svg"));
         logoElement.replaceWith(imgElement);
       }
     }
