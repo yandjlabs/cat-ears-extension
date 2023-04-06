@@ -21,7 +21,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
     //facebook (old ppl lol)
     if (request.action === "replaceLogo" && isOnFacebook()) {
-      const logoElement = document.querySelector(".yt-spec-icon-shape div svg.external-icon");
+      const logoElement = document.querySelector("svg.x1lliihq.x1ujvgzy");
       if (logoElement) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "");
