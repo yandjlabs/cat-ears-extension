@@ -18,8 +18,8 @@
         "https://*.youtube.com/*",
         "https://*.instagram.com/*",
         "https://*.facebook.com/*",
-        "https://*.tiktok.com/*",
-        "https://*.twitter.com/*"
+        "https://*.twitter.com/*",
+        "https://*.tiktok.com/*"
       ],
       "js": ["content.js"]
     }
@@ -31,15 +31,15 @@
         "https://*.youtube.com/*",
         "https://*.instagram.com/*",
         "https://*.facebook.com/*",
-        "https://*.tiktok.com/*",
-        "https://*.twitter.com/*"
+        "https://*.twitter.com/*",
+        "https://*.tiktok.com/*"
       ],
       "resources": [
         "assets/YouTube.svg",
         "assets/Instagram.svg",
         "assets/Facebook.svg",
-        "assets/TikTok.svg",
         "assets/Twitter.svg",
+        "assets/TikTok.svg",        
         "assets/power-off.svg",
         "assets/power-on.svg"
       ]
