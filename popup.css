@@ -1,4 +1,46 @@
 body {
     min-width: 310px;
     min-height: 350px;
+    text-align: center;
+}
+
+#logo {
+    height: 150px;
+}
+
+#title {
+    font-size: 26px;
+    margin: 0px;
+}
+
+#subtitle {
+    color: rgb(129, 129, 129);
+}
+
+.link-btn {
+    border: none;
+    padding: 5px 16px;
+    background-color: rgb(236, 231, 231);
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.link-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.link-btn:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+.version-btn {
+    border: none;
+    padding: 0.25rem 0.5rem;
+    background-color: rgb(236, 231, 231);
+    border-radius: 3px;
+    font-weight: 700;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
 }
