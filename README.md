@@ -6,7 +6,7 @@ A [Jacob](https://github.com/JacobF14) and [Yang](https://github.com/yang-yi-she
 ## Todo list:
 
 - [x] Learn SOP for making browser extension
-- [ ] Make manifest.json
-- [ ] Figure out how to swap actual logos for cat ear logos
+- [x] Make manifest.json
+- [x] Figure out how to swap actual logos for cat ear logos
 - [x] Draw separate logos for every major website
 - [ ] Test and unleash v 1.0.0 unto the public
