@@ -15,7 +15,7 @@ function isOnFacebook() {
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     //youtube (please don't use shorts)
     if (request.action === "replaceLogo" && isOnYouTube()) {
-      const logoElement = document.querySelector(".yt-spec-icon-shape div svg.external-icon");
+      const logoElement = document.querySelector("yt-icon#logo-icon");
       if (logoElement) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "");
