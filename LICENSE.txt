@@ -2,15 +2,15 @@
 
 Copyright © 2023 Yang Yi Shen and Jacob Foster at YandJLabs@protonmail.com
 
-This file is part of Cat Ears Browser Extension.
+This file, and the repository it belongs to, is part of Cat Ears Browser Extension.
 
-Cat Ears Browser Extension (and its code) cannot be copied, edited and/or 
+Cat Ears Browser Extension and its code cannot be copied, edited and/or
 
 distributed without the express permission of Yang Yi Shen and Jacob Foster.
 
-If you have the aforementioned permissions, you must distribute the extension 
+If you have the aforementioned permissions, you must distribute the extension
 
-(and its code) for free, give full credit to the authors, and if any changes 
+(and its code) for free, give full credit to the authors, and if any changes
 
 are made to the source code, send the changes back to YandJLabs@protonmail.com.
 
