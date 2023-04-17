@@ -10,8 +10,20 @@ distributed without the express permission of Yang Yi Shen and Jacob Foster.
 
 If you have the aforementioned permissions, you must distribute the extension
 
-(and its code) for free, give full credit to the authors, and if any changes
+(and its code) for free, give full credit to the authors, show proof that you 
 
-are made to the source code, send the changes back to YandJLabs@protonmail.com.
+have the aforementioned permissions, and if any changes are made to the source code, 
+
+send the changes back to YandJLabs@protonmail.com for approval. 
+
+If Yang Yi Shen and Jacob Foster deem that the changes made to the source code 
+
+are not to their liking, the revisions and or changes must be deleted and if 
+
+applicabble, the repository it is in. In the case that someone copies the code 
+
+and doesn't provide this license, and someone copies it from that person, etc.
+
+all parties are still subject to the license.
 
 *******************************************************/
