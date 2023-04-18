@@ -10,6 +10,9 @@ function isOnFacebook() {
   return window.location.hostname.includes("facebook.com");
 }
 
+function isOnAmazon() {
+  return window.location.hostname.includes("amazon.com");
+}
 
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -45,6 +48,18 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         imgElement.setAttribute("id", "");
         imgElement.style.width = "90px";
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Facebook.svg"));
+        logoElement.replaceWith(imgElement);
+      }
+    }
+
+    //grifters gotta grift
+    if (request.action === "replaceLogo" && isOnAmazon()) {
+      const logoElement = document.querySelector("span.nav-sprite.nav-logo-base");
+      if (logoElement) {
+        const imgElement = document.createElement("img");
+        imgElement.setAttribute("id", "");
+        imgElement.style.height = "80px";
+        imgElement.setAttribute("src", chrome.runtime.getURL("assets/Amazon.png"));
         logoElement.replaceWith(imgElement);
       }
     }
