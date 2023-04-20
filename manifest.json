@@ -18,6 +18,7 @@
         "https://*.youtube.com/*",
         "https://*.instagram.com/*",
         "https://*.facebook.com/*",
+        "https://*.amazon.com/*",
         "https://*.twitter.com/*",
         "https://*.tiktok.com/*"
       ],
@@ -31,6 +32,7 @@
         "https://*.youtube.com/*",
         "https://*.instagram.com/*",
         "https://*.facebook.com/*",
+        "https://*.amazon.com/*",
         "https://*.twitter.com/*",
         "https://*.tiktok.com/*"
       ],
@@ -38,6 +40,7 @@
         "assets/YouTube.svg",
         "assets/Instagram.svg",
         "assets/Facebook.svg",
+        "assets/Amazon.png",
         "assets/Twitter.svg",
         "assets/TikTok.svg",        
         "assets/power-off.svg",
