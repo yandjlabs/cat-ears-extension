@@ -52,14 +52,14 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       }
     }
 
-    //grifters gotta grift
+    //My name Jeff
     if (request.action === "replaceLogo" && isOnAmazon()) {
       const logoElement = document.querySelector("span.nav-sprite.nav-logo-base");
       if (logoElement) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "");
         imgElement.style.height = "80px";
-        imgElement.setAttribute("src", chrome.runtime.getURL("assets/Amazon.png"));
+        imgElement.setAttribute("src", chrome.runtime.getURL("assets/Amazon.svg"));
         logoElement.replaceWith(imgElement);
       }
     }
