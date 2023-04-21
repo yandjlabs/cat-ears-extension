@@ -1,3 +1,7 @@
+function isOnGithub() {
+  return window.location.hostname.includes("github.com");
+}
+
 function isOnYouTube() {
   return window.location.hostname.includes("youtube.com");
 }
@@ -16,6 +20,18 @@ function isOnAmazon() {
 
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    //grifters gotta grift
+    if (request.action === "replaceLogo" && isOnGithub()) {
+      const logoElement = document.querySelector("a.Header-link");
+      if (logoElement) {
+        const imgElement = document.createElement("img");
+        imgElement.setAttribute("id", "");
+        imgElement.style.width = "40px";
+        imgElement.setAttribute("src", chrome.runtime.getURL("assets/GitHub.svg"));
+        logoElement.replaceWith(imgElement);
+      }
+    }
+
     //youtube (please don't use shorts)
     if (request.action === "replaceLogo" && isOnYouTube()) {
       const logoElement = document.querySelector("yt-icon#logo-icon");
@@ -30,11 +46,18 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
     //instagram (for da gram)
     if (request.action === "replaceLogo" && isOnInstagram()) {
-      const logoElement = document.querySelector("div._aagx svg._ab6-");
+      //literally only div da gram boss forgot to disable replace
+      const logoElement = document.querySelector("div#splash-screen");
       if (logoElement) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "");
+        //push logo to front
+        imgElement.style.position = "fixed"
+        imgElement.style.zIndex = "1";
+        imgElement.style.height = "55px";
         imgElement.style.width = "90px";
+        imgElement.style.objectFit = "cover";
+        imgElement.style.margin = "0px 0px 0px 260px"
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Instagram.svg"));
         logoElement.replaceWith(imgElement);
       }
@@ -52,13 +75,15 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       }
     }
 
-    //My name Jeff
+    //my name Jeff
     if (request.action === "replaceLogo" && isOnAmazon()) {
       const logoElement = document.querySelector("span.nav-sprite.nav-logo-base");
       if (logoElement) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "");
-        imgElement.style.height = "80px";
+        imgElement.style.height = "100%";
+        imgElement.style.width = "75px";
+        imgElement.style.objectFit = "cover";
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Amazon.svg"));
         logoElement.replaceWith(imgElement);
       }
