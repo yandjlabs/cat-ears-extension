@@ -15,6 +15,7 @@
   "content_scripts": [
     {
       "matches": [
+        "https://*.github.com/*",
         "https://*.youtube.com/*",
         "https://*.instagram.com/*",
         "https://*.facebook.com/*",
@@ -29,6 +30,7 @@
   "web_accessible_resources": [
     {
       "matches": [
+        "https://*.github.com/*",
         "https://*.youtube.com/*",
         "https://*.instagram.com/*",
         "https://*.facebook.com/*",
@@ -37,6 +39,7 @@
         "https://*.tiktok.com/*"
       ],
       "resources": [
+        "assets/GitHub.svg",
         "assets/YouTube.svg",
         "assets/Instagram.svg",
         "assets/Facebook.svg",
