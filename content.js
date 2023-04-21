@@ -58,7 +58,9 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       if (logoElement) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "");
-        imgElement.style.height = "80px";
+        imgElement.style.height = "100%";
+        imgElement.style.width = "75px";
+        imgElement.style.objectFit = "cover";
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Amazon.svg"));
         logoElement.replaceWith(imgElement);
       }
