@@ -30,11 +30,16 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
     //instagram (for da gram)
     if (request.action === "replaceLogo" && isOnInstagram()) {
-      const logoElement = document.querySelector("div._aagx svg._ab6-");
+      //literally only div da gram boss forgot to disable replace
+      const logoElement = document.querySelector("div#splash-screen");
       if (logoElement) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "");
+        //push logo to front
+        imgElement.style.position = "absolute"
+        imgElement.style.zIndex = "1";
         imgElement.style.width = "90px";
+        imgElement.style.margin = "0px 0px 0px 25px"
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Instagram.svg"));
         logoElement.replaceWith(imgElement);
       }
