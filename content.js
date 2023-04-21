@@ -36,10 +36,12 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "");
         //push logo to front
-        imgElement.style.position = "absolute"
+        imgElement.style.position = "fixed"
         imgElement.style.zIndex = "1";
+        imgElement.style.height = "55px";
         imgElement.style.width = "90px";
-        imgElement.style.margin = "0px 0px 0px 25px"
+        imgElement.style.objectFit = "cover";
+        imgElement.style.margin = "0px 0px 0px 260px"
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Instagram.svg"));
         logoElement.replaceWith(imgElement);
       }
