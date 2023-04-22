@@ -18,6 +18,10 @@ function isOnAmazon() {
   return window.location.hostname.includes("amazon.com");
 }
 
+function isOnTiktok() {
+  return window.location.hostname.includes("tiktok.com");
+}
+
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     //grifters gotta grift
@@ -86,6 +90,23 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         imgElement.style.objectFit = "cover";
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Amazon.svg"));
         logoElement.replaceWith(imgElement);
+      }
+    }
+
+    //pls no...
+    if (request.action === "replaceLogo" && isOnTiktok()) {
+      const logoElement = document.querySelector("div.tiktok-un797x-DivHeaderLeftContainer.e15qqn8h1");
+      if (logoElement) {
+        const imgElement = document.createElement("img");
+        const wrapper = document.createElement("a");
+
+        imgElement.setAttribute("id", "");
+        imgElement.style.height = "90px";
+        imgElement.style.objectFit = "cover";
+        imgElement.setAttribute("src", chrome.runtime.getURL("assets/TikTok.svg"));
+        wrapper.appendChild(imgElement);
+        wrapper.setAttribute("href", "/")
+        logoElement.replaceWith(wrapper);
       }
     }
 });
