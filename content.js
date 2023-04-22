@@ -18,13 +18,17 @@ function isOnAmazon() {
   return window.location.hostname.includes("amazon.com");
 }
 
+function isOnTwitter() {
+  return window.location.hostname.includes("twitter.com");
+}
+
 function isOnTiktok() {
   return window.location.hostname.includes("tiktok.com");
 }
 
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    //grifters gotta grift
+    //imagine using light mode
     if (request.action === "replaceLogo" && isOnGithub()) {
       const logoElement = document.querySelector("a.Header-link");
       if (logoElement) {
@@ -89,6 +93,22 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         imgElement.style.width = "75px";
         imgElement.style.objectFit = "cover";
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Amazon.svg"));
+        logoElement.replaceWith(imgElement);
+      }
+    }
+
+    //imagine buying a blue checkmark
+    if (request.action === "replaceLogo" && isOnTwitter()) {
+      const logoElement = document.querySelector("noscript");
+      if (logoElement) {
+        const imgElement = document.createElement("img");
+        imgElement.setAttribute("id", "");
+        imgElement.style.height = "45px";
+        imgElement.style.position = "fixed"
+        imgElement.style.objectFit = "cover";
+        imgElement.style.zIndex = "1";
+        imgElement.style.margin = "-2px 0px 0px 99px"
+        imgElement.setAttribute("src", chrome.runtime.getURL("assets/Twitter.svg"));
         logoElement.replaceWith(imgElement);
       }
     }
