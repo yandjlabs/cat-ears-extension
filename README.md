@@ -8,5 +8,5 @@ A [Jacob](https://github.com/JacobF14) and [Yang](https://github.com/yang-yi-she
 - [x] Learn SOP for making browser extension
 - [x] Make manifest.json
 - [x] Figure out how to swap actual logos for cat ear logos
-- [x] Draw separate logos for every major website
-- [ ] Test and unleash v 1.0.0 unto the public
+- [ ] Draw separate logos for every major website
+- [ ] Test and release v0.9.0 beta unto the public
