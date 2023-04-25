@@ -30,7 +30,7 @@ function isOnTiktok() {
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     //imagine using light mode
     if (request.action === "replaceLogo" && isOnGithub()) {
-      const logoElement = document.querySelector("a.Header-link");
+      const logoElement = document.querySelector("svg.octicon.octicon-mark-github");
       if (logoElement) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "");
