@@ -16,4 +16,7 @@ A [Jacob](https://github.com/JacobF14) and [Yang](https://github.com/yang-yi-she
 - - [x] Twitter
 - - [x] Tiktok
 - [ ] Draw separate logos for every major website
+- [ ] Add support for Edge
+- - [x] Logo displays on all websites
+- - [ ] Correct logo spacing on Instagram and Twitter
 - [ ] Test and release v0.1.0 beta unto the public
