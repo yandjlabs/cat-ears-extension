@@ -29,4 +29,4 @@ A [Jacob](https://github.com/JacobF14) and [Yang](https://github.com/yang-yi-she
 - [ ] Fix Instagram, Twitter logo spacing
 - - [ ] Instagram
 - - [ ] Twitter
-- [ ] Test and release v0.1.0 beta unto the public
+- [ ] Test and release v0.9.0 beta unto the public
