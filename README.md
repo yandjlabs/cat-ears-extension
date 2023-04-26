@@ -3,6 +3,16 @@ A browser extension that adds cat ears to logos of major websites.
 
 A [Jacob](https://github.com/JacobF14) and [Yang](https://github.com/yang-yi-shen)™ production
 
+## Currently supports:
+
+<div style="display: flex; flex-direction: row; gap: 5px;">
+<img height="35px" src="https://raw.githubusercontent.com/github/explore/master/topics/chrome/chrome.png">
+
+<img height="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opera/opera-original.svg">
+
+<img height="35px" src="https://raw.githubusercontent.com/github/explore/master/topics/edge/edge.png">
+</div>
+
 ## Todo list:
 
 - [x] Learn SOP for making browser extension
