@@ -5,13 +5,9 @@ A [Jacob](https://github.com/JacobF14) and [Yang](https://github.com/yang-yi-she
 
 ## Currently supports:
 
-<div style="display: flex; flex-direction: row; gap: 5px;">
-<img height="35px" src="https://raw.githubusercontent.com/github/explore/master/topics/chrome/chrome.png">
-
-<img height="35px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opera/opera-original.svg">
-
-<img height="35px" src="https://raw.githubusercontent.com/github/explore/master/topics/edge/edge.png">
-</div>
+[![Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=Google-Chrome&logoColor=white&labelColor=F7B500&message=CHROME&color=EBEBEB)](https://www.google.com/chrome/)
+[![Opera](https://img.shields.io/badge/Opera-FF1B2D?style=for-the-badge&logo=Opera&logoColor=white&labelColor=FF1B2D&message=OPERA&color=EBEBEB)](https://www.opera.com/)
+[![Edge](https://img.shields.io/badge/Microsoft%20Edge-0078D7?style=for-the-badge&logo=Microsoft-Edge&logoColor=white&labelColor=0078D7&message=EDGE&color=EBEBEB)](https://www.microsoft.com/en-us/edge)
 
 ## Todo list:
 
