@@ -25,8 +25,7 @@ A [Jacob](https://github.com/JacobF14) and [Yang](https://github.com/yang-yi-she
 - - [x] Amazon
 - - [x] Twitter
 - - [x] Tiktok
-- [ ] Draw separate logos for every major website
-- [ ] Fix Instagram, Twitter logo spacing
-- - [ ] Instagram
-- - [ ] Twitter
+- [x] Fix Instagram, Twitter logo spacing
+- - [x] Instagram
+- - [x] Twitter
 - [ ] Test and release v0.9.0 beta unto the public
