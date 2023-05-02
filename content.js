@@ -33,8 +33,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       const logoElement = document.querySelector("svg.octicon.octicon-mark-github");
       if (logoElement) {
         const imgElement = document.createElement("img");
-        imgElement.setAttribute("id", "");
-        imgElement.style.width = "40px";
+        imgElement.setAttribute("id", "github-logo");
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/GitHub.svg"));
         logoElement.replaceWith(imgElement);
       }
@@ -45,8 +44,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       const logoElement = document.querySelector("yt-icon#logo-icon");
       if (logoElement) {
         const imgElement = document.createElement("img");
-        imgElement.setAttribute("id", "");
-        imgElement.style.width = "90px";
+        imgElement.setAttribute("id", "youtube-logo");
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/YouTube.svg"));
         logoElement.replaceWith(imgElement);
       }
@@ -58,13 +56,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       const logoElement = document.querySelector("div#splash-screen");
       if (logoElement) {
         const imgElement = document.createElement("img");
-        imgElement.setAttribute("id", "");
-        //push logo to front
-        imgElement.style.height = "55px"
-        imgElement.style.position = "fixed"
-        imgElement.style.zIndex = "1";
-        imgElement.style.margin = "0px 0px 0px 0px"
-        imgElement.style.margin = "-2px 0px 0px 120px"
+        imgElement.setAttribute("id", "instagram-logo");
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Instagram.svg"));
         logoElement.replaceWith(imgElement);
       }
@@ -75,8 +67,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       const logoElement = document.querySelector("svg.x1lliihq.x1ujvgzy");
       if (logoElement) {
         const imgElement = document.createElement("img");
-        imgElement.setAttribute("id", "");
-        imgElement.style.width = "90px";
+        imgElement.setAttribute("id", "facebook-logo");
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Facebook.svg"));
         logoElement.replaceWith(imgElement);
       }
@@ -87,10 +78,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       const logoElement = document.querySelector("span.nav-sprite.nav-logo-base");
       if (logoElement) {
         const imgElement = document.createElement("img");
-        imgElement.setAttribute("id", "");
-        imgElement.style.height = "100%";
-        imgElement.style.width = "75px";
-        imgElement.style.objectFit = "cover";
+        imgElement.setAttribute("id", "amazon-logo");
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Amazon.svg"));
         logoElement.replaceWith(imgElement);
       }
@@ -101,12 +89,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       const logoElement = document.querySelector("noscript");
       if (logoElement) {
         const imgElement = document.createElement("img");
-        imgElement.setAttribute("id", "");
-        imgElement.style.height = "45px";
-        imgElement.style.position = "fixed"
-        imgElement.style.objectFit = "cover";
-        imgElement.style.zIndex = "1";
-        imgElement.style.margin = "-2px 0px 0px 99px"
+        imgElement.setAttribute("id", "twitter-logo");
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/Twitter.svg"));
         logoElement.replaceWith(imgElement);
       }
@@ -117,11 +100,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       const logoElement = document.querySelector("div.tiktok-un797x-DivHeaderLeftContainer.e15qqn8h1");
       if (logoElement) {
         const imgElement = document.createElement("img");
+        imgElement.setAttribute("id", "tiktok-logo");
         const wrapper = document.createElement("a");
-
-        imgElement.setAttribute("id", "");
-        imgElement.style.height = "90px";
-        imgElement.style.objectFit = "cover";
         imgElement.setAttribute("src", chrome.runtime.getURL("assets/TikTok.svg"));
         wrapper.appendChild(imgElement);
         wrapper.setAttribute("href", "/")

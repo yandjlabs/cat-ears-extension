@@ -1,0 +1,37 @@
+#github-logo {
+    width: 40px;
+}
+
+#youtube-logo {
+    width: 90px;
+}
+
+#instagram-logo {
+    height: 55px;
+    position: fixed;
+    z-index: 1;
+    margin: -2px 0px 0px 120px;
+}
+
+#facebook-logo {
+    width: 90px;
+}
+
+#amazon-logo {
+    height: 100%;
+    width: 75px;
+    object-fit: cover;
+}
+
+#twitter-logo {
+    height: 45px;
+    position: fixed;
+    object-fit: cover;
+    z-index: 1;
+    margin: -2px 0px 0px 19.5px;
+}
+
+#tiktok-logo {
+    height: 90px;
+    object-fit: cover;
+}
