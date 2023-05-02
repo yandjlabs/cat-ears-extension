@@ -23,7 +23,8 @@
         "https://*.twitter.com/*",
         "https://*.tiktok.com/*"
       ],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "css": ["content.css"]
     }
   ],
 
