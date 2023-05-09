@@ -45,7 +45,14 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       if (logoElement) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "youtube-logo");
-        imgElement.setAttribute("src", chrome.runtime.getURL("assets/YouTube.svg"));
+
+        const html = document.querySelector("html")
+        if (html.getAttribute('dark') !== null) {
+          imgElement.setAttribute("src", chrome.runtime.getURL("assets/dark/YouTube-Dark.svg"));
+        }
+        else {
+          imgElement.setAttribute("src", chrome.runtime.getURL("assets/YouTube.svg"));
+        }
         logoElement.replaceWith(imgElement);
       }
     }
