@@ -121,7 +121,15 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "tiktok-logo");
         const wrapper = document.createElement("a");
-        imgElement.setAttribute("src", chrome.runtime.getURL("assets/TikTok.svg"));
+
+        // display different image according to theme
+        const html = document.querySelector('html');
+        if (html.getAttribute('data-theme') === 'dark') {
+          imgElement.setAttribute("src", chrome.runtime.getURL("assets/TikTok-Dark.svg"));
+        } else {
+          imgElement.setAttribute("src", chrome.runtime.getURL("assets/TikTok.svg"));
+        }
+        
         wrapper.appendChild(imgElement);
         wrapper.setAttribute("href", "/")
         logoElement.replaceWith(wrapper);
