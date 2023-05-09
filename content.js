@@ -57,18 +57,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       }
     }
 
-    //instagram (for da gram)
-    if (request.action === "replaceLogo" && isOnInstagram()) {
-      //literally only div da gram boss forgot to disable replace
-      const logoElement = document.querySelector("div#splash-screen");
-      if (logoElement) {
-        const imgElement = document.createElement("img");
-        imgElement.setAttribute("id", "instagram-logo");
-        imgElement.setAttribute("src", chrome.runtime.getURL("assets/Instagram.svg"));
-        logoElement.replaceWith(imgElement);
-      }
-    }
-
     //facebook (old ppl lol)
     if (request.action === "replaceLogo" && isOnFacebook()) {
       const logoElement = document.querySelector("svg.x1lliihq.x1ujvgzy");

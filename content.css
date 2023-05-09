@@ -6,13 +6,6 @@
     width: 90px;
 }
 
-#instagram-logo {
-    height: 55px;
-    position: fixed;
-    z-index: 1;
-    margin: -2px 0px 0px 120px;
-}
-
 #facebook-logo {
     width: 50px;
 }
