@@ -90,7 +90,19 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       if (logoElement) {
         const imgElement = document.createElement("img");
         imgElement.setAttribute("id", "twitter-logo");
-        imgElement.setAttribute("src", chrome.runtime.getURL("assets/Twitter.svg"));
+
+        // display different image according to theme
+        const bodyStyle = getComputedStyle(document.body);
+        if (bodyStyle.backgroundColor === 'rgb(0, 0, 0)') {
+          imgElement.setAttribute("src", chrome.runtime.getURL("assets/dark/Twitter-Dark.svg"));
+        } 
+        else if (bodyStyle.backgroundColor === 'rgb(21, 32, 43)') {
+          imgElement.setAttribute("src", chrome.runtime.getURL("assets/dark/Twitter-Dim.svg"));
+        } 
+        else {
+          imgElement.setAttribute("src", chrome.runtime.getURL("assets/Twitter.svg"));
+        }
+
         logoElement.replaceWith(imgElement);
       }
     }

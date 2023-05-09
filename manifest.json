@@ -46,7 +46,11 @@
         "assets/Facebook.svg",
         "assets/Amazon.svg",
         "assets/Twitter.svg",
-        "assets/TikTok.svg",        
+        "assets/TikTok.svg",  
+        
+        "assets/dark/Twitter-Dark.svg",
+        "assets/dark/Twitter-Dim.svg",
+        
         "assets/power-off.svg",
         "assets/power-on.svg"
       ]
