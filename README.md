@@ -13,6 +13,10 @@ A [Jacob](https://github.com/JacobF14) and [Yang](https://github.com/yang-yi-she
 <img height="35px" src="https://raw.githubusercontent.com/github/explore/master/topics/edge/edge.png">
 </div>
 
+## Disclaimer:
+
+> As the extension is currently in beta testing, Instagram is not currently supported
+
 ## Todo list:
 
 - [x] Learn SOP for making browser extension
@@ -20,12 +24,20 @@ A [Jacob](https://github.com/JacobF14) and [Yang](https://github.com/yang-yi-she
 - [x] Figure out how to swap actual logos for cat ear logos
 - - [x] Github
 - - [x] Youtube
-- - [x] Instagram
+- - [ ] Instagram
 - - [x] Facebook
 - - [x] Amazon
 - - [x] Twitter
 - - [x] Tiktok
 - [x] Fix Instagram, Twitter logo spacing
-- - [x] Instagram
+- - [ ] Instagram
 - - [x] Twitter
+- [ ] Add support for dark mode on all websites
+- - [x] Github
+- - [x] Youtube
+- - [ ] Instagram
+- - [x] Facebook
+- - [x] Amazon
+- - [x] Twitter
+- - [x] Tiktok
 - [ ] Test and release v0.9.0 beta unto the public
