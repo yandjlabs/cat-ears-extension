@@ -4,10 +4,6 @@
   "version": "0.9.1",
   "manifest_version": 3,
 
-  "permissions": [
-    "activeTab"
-  ],
-
   "background": {
     "service_worker": "background.js"
   },
