@@ -20,7 +20,7 @@ If Yang Yi Shen and Jacob Foster deem that the changes made to the source code
 
 are not to their liking, the revisions and or changes must be deleted and if 
 
-applicabble, the repository it is in. In the case that someone copies the code 
+applicable, the repository it is in. In the case that someone copies the code 
 
 and doesn't provide this license, and someone copies it from that person, etc.
 
