@@ -1,12 +1,12 @@
 /*******************************************************
 
-Copyright © 2023 Yang Yi Shen and Jacob Foster at YandJLabs@protonmail.com
+Copyright © 2024 YandJLabs at YandJLabs@protonmail.com
 
 This file, and the repository it belongs to, is part of Cat Ears Browser Extension.
 
-Cat Ears Browser Extension and its code cannot be copied, edited and/or
+Cat Ears Browser Extension and its code cannot be copied, edited, and/or
 
-distributed without the express permission of Yang Yi Shen and Jacob Foster.
+distributed without the express permission of YandJLabs.
 
 If you have the aforementioned permissions, you must distribute the extension
 
@@ -18,7 +18,7 @@ send the changes back to YandJLabs@protonmail.com for approval.
 
 If Yang Yi Shen and Jacob Foster deem that the changes made to the source code 
 
-are not to their liking, the revisions and or changes must be deleted and if 
+are not to their liking, the revisions and or changes must be deleted, and if 
 
 applicable, the repository it is in. In the case that someone copies the code 
 
